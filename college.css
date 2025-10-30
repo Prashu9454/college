@@ -1,0 +1,133 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://media.gettyimages.com/id/2203291531/vector/blue-background-with-multiple-white-question-marks-alongside.jpg?s=612x612&w=0&k=20&c=kRj-2E4ETKTYgfcxd4ZLg-OpAzcNoFJniP6b_Y-ABOA=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  color: #151515;
+  backdrop-filter: blur(10px);
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: #141414 2px 5px 100px 2px;
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+  color: #050505;
+  text-align: center;
+}
+
+p {
+  color: #050505;
+  text-align: center;
+  margin: 20px;
+}
+button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #5f339c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  width: 80%;              
+  max-width: 300px;        
+  min-height: 50px;       
+  line-height: 50px;       
+  margin: 10px auto;      
+  color: #5f339c;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px #111111;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;          
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;        
+}
+
+li:hover {
+
+  background-color: #5f339c;
+  color: #fff;
+}
+
+li.selected {
+  border: 2px solid #444;
+  transform: scale(1.02);
+}
+
+li.correct {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+
+
+li.wrong {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+
+li.disabled:hover {
+  background-color: inherit;
+  color: inherit;
+  box-shadow: none;
+}
+
+#loading, #error {
+  text-align: center;
+  padding: 20px;
+}
+
+#error {
+  color: #dc3545;
+}
+
+#retry-btn {
+  margin-top: 10px;
+}
